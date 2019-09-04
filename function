@@ -1,0 +1,41 @@
+var temp = global.get("temp");
+var Pul = global.get("pulsador");
+
+
+
+if(temp>26){
+    var banderita;
+    banderita = '1';
+    msg.payload='1';
+    
+}else{
+    msg.payload='0';
+}
+
+if(banderita=='1'){
+        msg.payload='1';
+    }
+
+
+  
+
+    
+    if(Pul==1){
+       
+            
+                msg.payload='0';
+                
+          
+          
+    }
+    
+
+
+
+return msg;
+
+    
+
+
+
+    
